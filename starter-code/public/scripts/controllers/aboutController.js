@@ -8,8 +8,8 @@
     repos.requestRepos(repoView.index);
   };
 
-  // TODO: What value is in 'module'? What is the purpose of this line of code?
-  // Put your response in this comment...
+  // DONE: What value is in 'module'? What is the purpose of this line of code?
+  // It's the reference to the objects or variables that will be made available outside of the IIFE.
   module.aboutController = aboutController;
-  
+
 })(window);

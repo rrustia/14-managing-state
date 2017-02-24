@@ -4,8 +4,8 @@
   const repos = {};
   repos.all = [];
 
-  // TODO: Where is this invoked? What values are passed in? Where does it interact elsewhere in the code?
-  // Put your response in this comment...
+  // DONE: Where is this invoked? What values are passed in? Where does it interact elsewhere in the code?
+  // It is being invoked here in repo.js as part of the IIFE and also being invoked by aboutController.js as part of its IIFE
   repos.requestRepos = function(callback) {
     $.get('/github/user/repos?per_page=5&sort=updated')
     .then(data => repos.all = data, err => console.error(err))

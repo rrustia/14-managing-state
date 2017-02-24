@@ -1,5 +1,5 @@
-// TODO: Where is this invoked? Where does it interact elsewhere in the code?
-// Put your response in this comment...
+// DONE: Where is this invoked? Where does it interact elsewhere in the code?
+//It's being invoked here in the IIFE and initializes our admin page
 
 (function() {
   const adminView = {

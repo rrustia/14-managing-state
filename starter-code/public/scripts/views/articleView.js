@@ -34,7 +34,7 @@
     });
   };
 
-  // TODO: Combine both filter functions to a single event handler,
+  // DONE: Combine both filter functions to a single event handler,
   // which simply redirects to a url like: /category/skateboarding or /author/Kevin+Bacon
   // Where is it invoked? What values are passed in? Where does it interact elsewhere in the code?
   // Put your response in this comment...
