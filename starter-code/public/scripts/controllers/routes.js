@@ -11,6 +11,6 @@ page('/author', '/');
 page('/author/:authorName', articleController.loadByAuthor, articleController.index);
 page('/category/:categoryName', articleController.loadByCategory, articleController.index);
 
-// TODO: What does this do? Is it necessary?
-// Put your response in this comment...
+//[x] DONE: What does this do? Is it necessary?
+// Instantiates page.js, to make the route defined to work.
 page();

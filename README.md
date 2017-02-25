@@ -9,7 +9,7 @@ Let's circle back to our UI logic... You know, everything that sets up the page 
 
 Let's use these new tools to review the refactored components of the UI: author filter, category filter, the teaser link, and a bunch of click events.
 
-Work with your partner to *comment* on the execution path for sections labeled with "TODO:".  These items are essentially TODO items that have been done for you and demonstrate the concepts we've covered the past few weeks.  While you will not be building out any additional functionality for this assignment, you will need to describe what each newly refactored method does and where it points back to.
+Work with your partner to *comment* on the execution path for sections labeled with "TO-DO:".  These items are essentially TO-DO items that have been done for you and demonstrate the concepts we've covered the past few weeks.  While you will not be building out any additional functionality for this assignment, you will need to describe what each newly refactored method does and where it points back to.
 
 The navigator for this assignment should be tracing the execution path and determining what each new method/update is doing while the driver will need to summarize the navigator's thoughts into a 1-2 sentence comment (below each "TODO:" item).  Be sure to switch roles after 4-5 COMMENT items have been completed.
 
@@ -21,4 +21,4 @@ The navigator for this assignment should be tracing the execution path and deter
  - If there are spaces in a URL, we have replaced them with a '+'
 
 ## Technical Requirements and Grading Rubric
- - Accurately comment on each TODO item to demonstrate your understanding of the functionality and the execution path.
+ - Accurately comment on each TO-DO item to demonstrate your understanding of the functionality and the execution path.

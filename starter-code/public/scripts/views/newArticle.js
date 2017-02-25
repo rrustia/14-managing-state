@@ -10,8 +10,8 @@
     $('#new-form').on('change', newArticle.create);
   };
 
-// TODO: Where is this invoked? What values are passed in? Where does it interact elsewhere in the code?
-// Put your response in this comment...
+//[x] DONE: Where is this invoked? What values are passed in? Where does it interact elsewhere in the code?
+// newArticle.create is instantly invoked, because it is contained in an IIFE. The values passed in are the values from the input fields found in new.html. It interacts with the .toHTML method of formArticle and new.HTML..
   newArticle.create = function() {
     $('#articles').empty();
     let formArticle = new Article({

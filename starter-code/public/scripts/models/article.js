@@ -45,8 +45,9 @@
     )
   };
 
-  // TODO: We have a new method to query our DB for a specific record, based on varying criteria. Where is it invoked? What values are passed in? Where does it interact elsewhere in the code?
-  // Put your response in this comment...
+  //[x] DONE: We have a new method to query our DB for a specific record, based on varying criteria. Where is it invoked? What values are passed in? Where does it interact elsewhere in the code?
+  // The method is invoked in articleController.js. The values passed in are "author", "author_id", and "category" for the field parameters. The ctx values are passed for the "value" parameter. For the callback function, the values being passed are "articleData", "authorData", and "categoryData".
+  //
   Article.findWhere = function(field, value, callback) {
     $.get('/articles/find', {field: field, val: value})
     .then(callback)
@@ -82,8 +83,8 @@
     })
   };
 
-  // TODO: Where is this invoked? Where does it interact elsewhere in the code? Where does the output of this code end up?
-  // Put your response in this comment...
+  //[x] DONE: Where is this invoked? Where does it interact elsewhere in the code? Where does the output of this code end up?
+  // The output of this code, which is an object, will go to stats which is appended to the Article objects.
   Article.stats = () => {
     return {
       numArticles: Article.all.length,
@@ -116,8 +117,8 @@
     .then(callback);
   };
 
-  // TODO: Where does this code interact with other code in the blog application?
-  // Put your response in this comment...
+  //[x] DONE: Where does this code interact with other code in the blog application?
+  // This code interacts with the postgres DB by updating the database with the method of PUT
   Article.prototype.updateRecord = function(callback) {
     $.ajax({
       url: `/articles/${this.article_id}`,

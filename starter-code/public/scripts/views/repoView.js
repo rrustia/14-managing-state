@@ -10,8 +10,8 @@
     $about.show().siblings().hide();
   };
 
-  // TODO: What is in 'render'? What values are passed in? Where does it interact elsewhere in the code?
-  // Put your response in this comment...
+  //[x] DONE: What is in 'render'? What values are passed in? Where does it interact elsewhere in the code?
+  // the render variable is immutable, and it contains the text from id=repo-template (found in the head of index.html)
   const render = Handlebars.compile($('#repo-template').text());
 
   repoView.index = function() {
