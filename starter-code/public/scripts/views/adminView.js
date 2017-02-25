@@ -1,4 +1,4 @@
-// DONE: Where is this invoked? Where does it interact elsewhere in the code?
+//[x] DONE: Where is this invoked? Where does it interact elsewhere in the code?
 //It's being invoked here in the IIFE and initializes our admin page
 
 (function() {
